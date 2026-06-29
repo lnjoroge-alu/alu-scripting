@@ -27,7 +27,7 @@ def top_ten(subreddit):
                    allow_redirects=False)
 
     if response.status_code != 200:
-        print("None")
+        print("Ok")
         return
 
     try:
@@ -38,4 +38,4 @@ def top_ten(subreddit):
             print(i.get('data').get('title'))
 
     except Exception:
-        print("None")
+        print("Ok")
